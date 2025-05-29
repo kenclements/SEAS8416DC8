@@ -1,0 +1,10 @@
+digraph "Simple AWS Web Service" {
+	graph [fontcolor="#2D3436" fontname="Sans-Serif" fontsize=15 label="Simple AWS Web Service" nodesep=0.60 pad=2.0 rankdir=LR ranksep=0.75 splines=ortho]
+	node [fixedsize=true fontcolor="#2D3436" fontname="Sans-Serif" fontsize=13 height=1.4 imagescale=true labelloc=b shape=box style=rounded width=1.4]
+	edge [color="#7B8894"]
+	"3cf75215833a4113965118838f0e532b" [label="load balancer" height=1.9 image="c:\Users\cleme\code\SEAS8416DC8\.venv\Lib\site-packages\resources/aws/network\elastic-load-balancing.png" shape=none]
+	"3178d4b2c1054723abb51ac374af10d3" [label="web server" height=1.9 image="c:\Users\cleme\code\SEAS8416DC8\.venv\Lib\site-packages\resources/aws/compute\ec2.png" shape=none]
+	"95c75e055c124f5b9b929e45cd152934" [label=database height=1.9 image="c:\Users\cleme\code\SEAS8416DC8\.venv\Lib\site-packages\resources/aws/database\rds.png" shape=none]
+	"3cf75215833a4113965118838f0e532b" -> "3178d4b2c1054723abb51ac374af10d3" [dir=forward fontcolor="#2D3436" fontname="Sans-Serif" fontsize=13]
+	"3178d4b2c1054723abb51ac374af10d3" -> "95c75e055c124f5b9b929e45cd152934" [dir=forward fontcolor="#2D3436" fontname="Sans-Serif" fontsize=13]
+}
